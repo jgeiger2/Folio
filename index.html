@@ -13,6 +13,18 @@
     <title>Folio</title>
 </head>
 <body>
+    <div class="theme-panel open">
+        <div class="theme-body">
+            <span>Change Theme</span>
+            <div class="btn-group">
+                <button data-toggle="light" class="switcher-btn active">Light</button>
+                <button data-toggle="dark" class="switcher-btn">Dark</button>
+            </div>
+            <button class="theme-tab">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+    </div>
     <main class="site-wrapper">
         <header class="site-header">
             <nav class="navbar">
@@ -28,8 +40,124 @@
                 </div>
             </nav>
         </header>
+
+        <!-- Hero Section -->
+        <section class="hero-bg">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="code-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                        <div>
+                            <h2 class="header-lg">Code. Eat. Sleep</h2>
+                            <div class="sub-header">I create meaningful solutions for your brand and product 
+                                <br>
+                                Give your customers the best experience possible.
+                            </div>
+                            <div class="btn btn-primary round-pill">
+                                <a href="#" data-open="contact">Let's talk now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <div class="container search-container">
+                <label for="search">
+                    <input type="text" class="search-input" name="" id="search" placeholder="Search...">
+                    <i class="fas fa-search"></i>
+                </label>
+                <ul class="ul-defaults-none portfolio-filter-nav">
+                    <li data-filter="all" class="filter-link active">All Work</li>
+                    <li data-filter="web" class="filter-link">Web Development</li>
+                    <li data-filter="app" class="filter-link">App Development</li>
+                    <li data-filter="ui" class="filter-link">UI Design</li>
+                </ul>
+            </div>
+
+            <div class="portfolio-grid">
+
+                <div class="portfolio-card" data-item="web">
+                    <div class="card-body">
+                        <img src="./Assets/images/portfolio-1.jpg" alt="portfolio icon">
+                        <a href="#" class="card-popup-box">
+                            <div>Web Development</div>
+                            <h3>Food Website</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-item="ui">
+                    <div class="card-body">
+                        <img src="./Assets/images/portfolio-2.jpg" alt="portfolio icon">
+                        <a href="#" class="card-popup-box">
+                            <div>UI Design</div>
+                            <h3>Social Media Website</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-item="app">
+                    <div class="card-body">
+                        <img src="./Assets/images/portfolio-3.jpg" alt="portfolio icon">
+                        <a href="#" class="card-popup-box">
+                            <div>App Development</div>
+                            <h3>Shopping Website</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-item="ui">
+                    <div class="card-body">
+                        <img src="./Assets/images/portfolio-4.jpg" alt="portfolio icon">
+                        <a href="#" class="card-popup-box">
+                            <div>UI Design</div>
+                            <h3>Food Website</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-item="app">
+                    <div class="card-body">
+                        <img src="./Assets/images/portfolio-5.jpg" alt="portfolio icon">
+                        <a href="#" class="card-popup-box">
+                            <div>App Development</div>
+                            <h3>Food Website</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-item="web">
+                    <div class="card-body">
+                        <img src="./Assets/images/portfolio-6.jpg" alt="portfolio icon">
+                        <a href="#" class="card-popup-box">
+                            <div>Web Development</div>
+                            <h3>Bank Website</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-item="web">
+                    <div class="card-body">
+                        <img src="./Assets/images/portfolio-7.jpg" alt="portfolio icon">
+                        <a href="#" class="card-popup-box">
+                            <div>Web Development</div>
+                            <h3>Gym Website</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-item="app">
+                    <div class="card-body">
+                        <img src="./Assets/images/portfolio-8.jpg" alt="portfolio icon">
+                        <a href="#" class="card-popup-box">
+                            <div>App Development</div>
+                            <h3>Gaming Website</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- Modals -->
+
+    <!-- About Modal -->
     <div id="about" class="full-site-modal page-block" data-animation="zoomInOut"">
         <header class="modal-header">
             <h3>ABOUT PAGE</h3>

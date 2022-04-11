@@ -259,6 +259,9 @@
 }
 
 .portfolio-grid {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     padding: 3rem 1rem;
@@ -267,7 +270,7 @@
 
 .portfolio-card {
     position: relative;
-    margin: 0 1rem 0 1.85rem;
+    margin: 0 1rem 1rem 1.85rem;
     max-width: 255px;
 }
 

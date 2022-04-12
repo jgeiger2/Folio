@@ -144,3 +144,109 @@ root.style.setProperty('--marquee-elms', marqueeContent.children.length);
 for (let i = 0; i < elmsDisplayed; i += 1) {
     marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
+
+// const portfolioCardData = [
+//     {
+//         type: 'web',
+//         id: 'web-1',
+//         img: '../Assets/images/portfolio-1.jpg',
+//         div: 'Web Development',
+//         h3: 'Food Website',
+//         popupH3: 'Web Design 1',
+//         popupHeader: 'My first awesome website',
+//         popupP1: 'Text 1',
+//         popupP2:   'Text 2'
+//     }
+// ]
+
+// portfolioCardData.forEach(function (item) {
+//     const dataArr = Object.values(item);
+//     function createCard() {
+//         const card = document.createElement('div');
+//         card.classList.add('portfolio-card');
+//         card.dataset.item = dataArr[0];
+//         card.dataset.open = dataArr[1];
+
+//         const body = document.createElement('div');
+//         body.classList.add('card-body');
+//         const cardImg = document.createElement('img');
+//         cardImg.setAttribute('src', dataArr[2]);
+//         cardImg.setAttribute('alt', 'portfolio image');
+//         body.appendChild(cardImg);
+
+//         const popupBox = document.createElement('div');
+//         popupBox.classList.add('card-popup-box');
+//         const popupHeader = document.createElement('div');
+//         popupHeader.textContent = dataArr[3];
+//         popupBox.appendChild(popupHeader);
+//         const popupText = document.createElement('h3');
+//         popupText.textContent = dataArr[4];
+//         popupBox.appendChild(popupText);
+        
+//         body.appendChild(popupBox);
+//         card.appendChild(body);
+//         portfolioGrid.appendChild(card);
+//     };
+
+//     card.addEventListener('click', function(e) {
+//         const newModal = document.createElement('div');
+//         newModal.id = dataArr[1];
+//         newModal.classList.add('modal', 'is-visible');
+//         newModal.dataset.animation = 'slideInOutTop';
+
+//         const modalDialog = document.createElement('div');
+//         modalDialog.classList.add('modal-dialog');
+
+//         const modalHeader = document.createElement('header');
+//         modalHeader.classList.add('modal-header');
+
+//         const headerText = document.createElement('h3');
+//         headerText.textContent = dataArr[5];
+
+//         const headerIcon = document.createElement('i');
+//         headerIcon.classList.add('fas', 'fa-times');
+
+//         headerIcon.dataset = 'data-close';
+//         modalHeader.appendChild(headerText);
+//         modalHeader.appendChild(headerIcon);
+//         modalDialog.appendChild(modalHeader);
+
+//         const modalBody = document.createElement('div');
+//         modalBody.classList.add('modal-body');
+
+//         const imageWrapper = document.createElement('div');
+//         imageWrapper.classList.add('img-wrapper');
+
+//         const img = document.createElement('img');
+//         img.src = dataArr[2];
+//         imageWrapper.appendChild(img);
+//         modalBody.appendChild(imageWrapper);
+
+//         const textWrapper = document.createElement('div');
+//         textWrapper.classList.add('text-wrapper');
+
+//         const textHeader = document.createElement('p');
+//         textHeader.style.fontWeight = 'bold';
+
+//         textHeader.textContent = dataArr[6];
+//         textWrapper.appendChild(textHeader);
+
+//         const p_1 = document.createElement('p');
+//         p_1.textContent = dataArr[7];
+//         textWrapper.appendChild(p_1);
+
+//         const p_2 = document.createElement('p');
+//         p_2.textContent = dataArr[8];
+//         textWrapper.appendChild(p_2);
+
+//         modalBody.appendChild(textWrapper);
+//         modalDialog.appendChild(modalBody);
+//         newModal.appendChild(modalDialog);
+//         document.body.appendChild(newModal);
+
+//         headerIcon.addEventListener('click', () => {
+//             newModal.classList.remove('is-visible');
+//         });
+//     });
+// createCard(dataArr)
+// });
